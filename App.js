@@ -1,7 +1,7 @@
 import react from 'react';
 import Home from './components/Home.js'
-import Repos from './components/Repos'
-import Header from './components/Header'
+import Repos from './components/Repos.js'
+import Header from './components/Header.js'
 
 
 
