@@ -1,13 +1,26 @@
-import react from 'react';
+import {useState, useEffect, react} from 'react'
 
 export default function Repos () {
+
+         const [list, setList] = useState([])
+    
+         useEffect(() => {
+            fetch('https://api.github.com/users/ChrispyRice024/starred?per_page=10').then(
+            (response) => response.json()
+        ).then(
+            (data) => setList(data)
+        )
+         }, [])
+
     return (
-        <div>
-            <h1>Top Repositories</h1>
+        <div id='repos'>
+            <h1>Top Deployed Projects</h1>
             <ul>
-                <li>Password Generator</li>
-                <li>Daily Planner</li>
-                <li>POS Back-End</li>
+        {list.map((list) => 
+        
+        <li><a href={list.html_url}> {list.name}</a></li>
+        )}
+        
             </ul>
         </div>
     )

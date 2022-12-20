@@ -2,17 +2,17 @@ import react from 'react';
 import Home from './components/Home.js'
 import Repos from './components/Repos.js'
 import Header from './components/Header.js'
-
+import './App.css'
 
 
 function App() {
   return (
     
     <div className="App">
-      <header className="App-header">
+      <header >
         <Header />
       </header>
-      <div>
+      <div id='repome'>
         <Home />
         <Repos />
       </div>

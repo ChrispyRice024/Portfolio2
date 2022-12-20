@@ -3,9 +3,9 @@ import react from 'react';
 
 export default function Home () {
     return (
-        <div>
-            <h1>Christopher Dirksen's Portfolio</h1>
-            <p>My name is Christopher Dirksen and this is my online portfolio. I am proficient in JavaScript, Node.js, React, express, and mySQL. i am currently taking a 3 month bootcamp with Georgia Tech. </p>
+        <div className='bio'>
+            <h1 className='bio'>Christopher Dirksen's Portfolio</h1>
+            <p className='bio'>My name is Christopher Dirksen and this is my online portfolio. I am proficient in HTML, CSS, JavaScript, Node.js, React, express, mongoDB/mongoose and mySQL. I recently completed a three month bootcamp at Georgia Tech.</p>
         </div>
     )
 }

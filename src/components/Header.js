@@ -6,7 +6,7 @@ export default function Header (){
 
     return (
         <div id='header'>
-            <p>Christopher Dirksen</p>
+            <h1>Christopher Dirksen's Portfolio</h1>
         </div>
     )
 }
