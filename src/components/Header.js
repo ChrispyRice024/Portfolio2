@@ -3,11 +3,6 @@ import react from 'react';
 export default function Header (){
 
 
-import react from 'react';
-
-export default function Header (){
-
-
 
     return (
         <div id='header'>
