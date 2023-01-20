@@ -1,12 +1,12 @@
 *{
-  background-color: #f5f5e9;
+  background-color: #3a5a40;
 }
-.App {
-  /* text-align: center; */
-  /* display: flex; */
-  /* justify-content: space-between;
-  align-items: flex-start; */
-}
+/* .App {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -50,10 +50,12 @@
 .bio{
   justify-content: space-between;
   max-width: 500px;
+  background-color: #a3b18a;
 
 }
 .repos{
   justify-content: flex-end;
+  background-color: #dad7cd;
 }
 #repome{
   display:flex;

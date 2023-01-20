@@ -22,7 +22,7 @@ export default function Repos () {
             <ul>
         {list.map((list) => 
         
-        <li ><button onClick={() => {setIFrame(list.html_url)}}>{list.name}</button></li>
+        <li ><button onClick={() => {setIFrame(`chrispyrice024.github.io/${list.name}` && console.log(`chrispyrice024.github.io/${list.name}`))}}>{list.name}</button></li>
         )}
         
             </ul>
