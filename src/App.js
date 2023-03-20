@@ -3,6 +3,7 @@ import Home from './components/Home.js'
 import Repos from './components/Repos.js'
 import Header from './components/Header.js'
 import ProjectWindow from './components/ProjectWindow'
+import Contact from './components/Contact'
 import './App.css'
 
 
@@ -17,7 +18,9 @@ function App() {
       </header>
       <div id='repome'>
         <Home />
+        <Contact />
         <Repos />
+
       </div>
       <footer>
 

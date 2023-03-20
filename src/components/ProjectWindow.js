@@ -10,7 +10,7 @@ export default function ProjectWindow (props) {
     console.log('window', setPage)
     console.log(setPage.img)
     return (
-        <div id='window'>
+        <div className='repos' id='window'>
             {setPage ? <a href={setPage.url}><img id='img' src={setPage.img} alt={setPage.name} /></a> : ''}
 
         </div>
