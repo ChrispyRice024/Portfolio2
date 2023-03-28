@@ -34,7 +34,7 @@ export default function Repos () {
             {
                 id:3,
                 name:'Red Dog Customs',
-                url:'',
+                url:'https://64233ff604fbed1e35a08363--reddog.netlify.app/',
                 img:red_dog,
                 disclaimer: '*This website is a functional site used by a company. Do not send emails to this site. They will not go to me.'
             },
