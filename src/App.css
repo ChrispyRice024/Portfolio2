@@ -1,19 +1,41 @@
-*{
-  background-color: #3a5a40;
+* {
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+  border-radius: 7px;
+  /* font-weight:550; */
+  text-shadow:1px 1px grey;
 }
-/* .App {
+.App {
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-} */
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-#header{
+.form {
+  background-color: #000080;
+  color: white;
+  max-width:700px;
+}
+
+#navBar {
+  font-size: 25px;
+}
+
+#self {
+  max-width: 60%;
+  border-radius: 40%;
+  border: solid;
+  border-color: #000080;
+  box-shadow: 5px 5px lightgrey;
+}
+
+#header {
   text-align: center;
 }
 
@@ -21,21 +43,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -47,46 +54,111 @@
   }
 }
 
-.bio{
+.bio {
   justify-content: space-between;
   max-width: 500px;
-  background-color: #a3b18a;
-
-}
-.repos{
-  background-color:#a3b18a;
-}
-#repome{
-  display:flex;
-  justify-content:space-evenly;
+  height: auto;
+  margin-top: 42px;
+  border-color: #000080;
 }
 
-#window{
-  height:auto;
-  width:600px;
-
+a {
+  color: #000080;
+  font-weight: 1000;
 }
 
-#img{
-  max-height:100%;
-  max-width:100%;
+.repos {
+  text-align: left;
+  background-color: #000080;
+  width: auto;
 }
 
-.contact{
-
-  padding: 5px
+.outerRepos {
+  max-width: 60%;
 }
 
-input, textarea{
-  background-color:#a3b18a;
+#repome {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-form, p, label{
-
-  padding:10px;
+#window {
+  display: flex;
+  justify-content: center;
+  background-color: #000080;
+  color: white;
+  max-width: 100%;
 }
 
-#message{
-  width:25vw;
-  height:200px;
+#resume {
+  text-align: left;
+}
+
+.contact {
+  padding: 5px;
+  background-color: #000080;
+  color: white;
+}
+
+textarea{
+  padding:6px;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+}
+
+#title {
+  text-align: center;
+}
+
+#message {
+  width: 25vw;
+  height: 200px;
+}
+
+#bio {
+  margin-left: 5px;
+  border: solid 5px;
+  padding: 3px;
+  border-color: #000080;
+}
+
+.sideWindow {
+  border: solid 5px;
+  border-color: black;
+  background-color: #000080;
+  color: white;
+  /* max-width:60%; */
+  margin: 10px;
+}
+
+.sideDisplay {
+  width: 60%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  /* text-align:center; */
+}
+
+#work-history {
+  border-color: black;
+  background-color: #000080;
+  color: white;
+  padding: 10px;
+}
+
+#title,
+ul,
+li {
+  background-color: #000080;
+  color: white;
+  margin: 10px;
+}
+
+#submit{
+  width:85px;
 }
