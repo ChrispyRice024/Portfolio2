@@ -4,7 +4,7 @@ export default function Resume () {
         <div id='resume'>
             <div id='work-history'>
                 <h2 id='title'>Work History</h2>
-                        Johnny's New York Style Pizza
+                        Johnny's New York Style Pizza (Current Employer)
                             <ul className='resume'>
                                 <li>Prepared and cooked food in a fast-paced environment, ensuring quality and efficiency.</li>
                                 <li>Managed kitchen operations during high-volume shifts, delegating tasks to team members and ensuring timely completion of closing duties.</li>

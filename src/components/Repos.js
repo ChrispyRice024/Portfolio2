@@ -1,28 +1,30 @@
 import {useState, useEffect, react} from 'react'
 import ProjectWindow from './ProjectWindow'
-import TaskApp from '../assets/TaskApp.jpeg'
+import NoteTaker from '../assets/NoteTaker.png'
 import TeamSelector from '../assets/Team_Selector.jpeg'
-import Calculator from '../assets/calculator.png'
+import DNDCompanion from '../assets/DNDCompanion.png'
+import FofServer from '../assets/FOFServer.png'
 import Resume from '../assets/Resume.png'
-import red_dog from '../assets/red_dog.png'
 
 
 export default function Repos () {
 
+    const [displayImage, setDisplayImage] = useState(false);
     const [iFrame, setIFrame] = useState({})
 
     const changeValue = (item) => {
         setIFrame(item)
-
+        setDisplayImage(true);
     }
+    
 
         const list = [
             {
                 id:1,
-                name:'Task App',
-                url:'https://63f3ee9087a8793ce70354e1--chrispytaskapp.netlify.app/',
-                img: TaskApp,
-                description:'Save tasks to a todo list and mark them off as they are completed'
+                name:'Note Taker',
+                url:'https://github.com/ChrispyRice024/note-taker',
+                img: NoteTaker,
+                description:'A small part of a bigger project, this app runs on NW.JS which combines Chromium and Node.JS environments'
             },
             {
                 id:2,
@@ -33,38 +35,46 @@ export default function Repos () {
             },
             {
                 id:3,
-                name:'Red Dog Customs',
-                url:'https://64233ff604fbed1e35a08363--reddog.netlify.app/',
-                img:red_dog,
-                description: '*This website is a functional site used by a company. Do not send emails to this site. They will not go to me.'
+                name:'Faith Over Fear Server',
+                url:'https://github.com/ChrispyRice024/FOFServer',
+                img: FofServer,
+                description:'(WIP)This is a fully functional server page using express.js, cors, and mongoose, and it connects to a Mongo DB and front-end.'
             },
             {
                 id:4,
-                name:'Resume',
-                url: 'https://docdro.id/GSLGFQp',
-                img: Resume,
-                description:'Up-to-date resume featuring skills, work history, and experience.'
+                name:'D&D Companion',
+                url:'https://github.com/ChrispyRice024/DNDCompanion',
+                img: DNDCompanion,
+                description:'(WIP)Utilizing the D&D API, this project helps create and store your Dungeons and Dragons Characters, while also helping you level up easily.'
             }
-
         ]
 
     return (
         <div className='repos '>
         <div className=' repos'>
             <h1 className='repos'>Top Projects</h1>
+            <span id='disclaimer'>*Click on the image to be taken to that projects repository.</span>
             <ul className='repos'>
         {list.map((item, index) => 
 
             <li className=' repos' key={index} >
-                <button onClick={() => changeValue(item)}>{item.name}</button><p className='repos'>{item.description}</p>
+                <button onClick={() => changeValue(item)}>
+                    {item.name}</button>
+                    <p className='repos'>{item.description}</p>
+                    {displayImage && index === list.length - 1 && (
+                <div className='repos window'>
+                  <ProjectWindow iFrame={iFrame} list={list} />
+                </div>
+              )}
             </li>
+            //i want the new div to be here under the list item that was clicked. i only want one div made, not a div for every item
         )}
         {console.log(iFrame)}
             </ul>
         </div>
-        <div className='repos window'>
+        {/* <div style= {{display: sizeDisplay}} className='repos window'>
             <ProjectWindow iFrame={iFrame} list={list} />
-        </div>
+        </div> */}
         </div>
     )
 }

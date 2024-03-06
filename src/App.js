@@ -9,13 +9,16 @@ import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
+
+  const display = window.innerWidth < 800 ? 'none' : ''
   return (
     <div >
       <header>
         <Header />
       </header>
       <div className="App" id="repome">
-        <Home />
+        <span style={{display: display}}><Home /></span>
+        
 
         <SideDisplay />
       </div>

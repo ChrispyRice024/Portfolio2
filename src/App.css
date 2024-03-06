@@ -39,21 +39,6 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .bio {
   justify-content: space-between;
   max-width: 500px;
@@ -67,20 +52,20 @@ a {
   font-weight: 1000;
 }
 
-.repos {
-  text-align: left;
-  background-color: #000080;
-  width: auto;
-}
+    .repos {
+      text-align: left;
+      background-color: #000080;
+      width: auto;
+    }
 
 .outerRepos {
   max-width: 60%;
 }
 
-#repome {
-  display: flex;
-  justify-content: space-evenly;
-}
+    #repome {
+      display: flex;
+      justify-content: space-evenly;
+    }
 
 #window {
   display: flex;
@@ -118,31 +103,34 @@ textarea {
   height: 200px;
 }
 
-#bio {
-  margin-left: 5px;
-  border: solid 5px;
-  padding: 3px;
-  border-color: #000080;
-}
+    #bio {
+      margin-left: 5px;
+      border: solid 5px;
+      padding: 3px;
+      border-color: #000080;
+    }
 
-.sideWindow {
-  border: solid 5px;
-  border-color: black;
-  background-color: #000080;
-  color: white;
-  /* max-width:60%; */
-  margin: 10px;
-}
+    .sideWindow {
+      border: solid 5px;
+      border-color: black;
+      background-color: #000080;
+      color: white;
+      /* max-width:60%; */
+      margin: 10px;
+      text-align:center;
+    }
 
 .sideDisplay {
-  width: 60%;
+  max-width: 60%;
+  display:block;
+  justify-content: center;
   text-align: center;
 }
 
-img {
-  width: 100%;
-  /* text-align:center; */
-}
+    img {
+      /* width: 100%; */
+      text-align:center;
+    }
 
 #work-history {
   border-color: black;
@@ -161,4 +149,36 @@ li {
 
 #submit{
   width:85px;
+}
+
+    #img{
+      max-width:100%;
+      display:block;
+    }
+
+#disclaimer{
+  background-color: #000080;
+  color:red;
+}
+
+@media (max-width: 800px){
+  .sideWindow{
+    display:flex
+  }
+  #repome{
+    display:block;
+
+  }
+  #img{
+    z-index:0;
+  }
+  #bio{
+    color:black;
+    text-align: center;
+    margin: auto;
+  }
+  #message{
+    width:80%
+  }
+  
 }
