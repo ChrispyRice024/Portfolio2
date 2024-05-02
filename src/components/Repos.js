@@ -38,7 +38,7 @@ export default function Repos () {
                 name:'Faith Over Fear Server',
                 url:'https://github.com/ChrispyRice024/FOFServer',
                 img: FofServer,
-                description:'(WIP)This is a fully functional server page using express.js, cors, and mongoose, and it connects to a Mongo DB and front-end.'
+                description:'This is a fully functional server page using express.js, cors, and mongoose, and it connects to a Mongo DB and front-end.'
             },
             {
                 id:4,
