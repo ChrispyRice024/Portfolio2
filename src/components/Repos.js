@@ -21,10 +21,10 @@ export default function Repos () {
         const list = [
             {
                 id:1,
-                name:'Note Taker',
-                url:'https://github.com/ChrispyRice024/note-taker',
+                name:'Note Taker For D&D',
+                url:'https://github.com/ChrispyRice024/DNDNotes',
                 img: NoteTaker,
-                description:'A small part of a bigger project, this app runs on NW.JS which combines Chromium and Node.JS environments'
+                description:'A small part of a bigger project, this app runs on ReactJs and NW.JS which combines Chromium and Node.JS environments'
             },
             {
                 id:2,
@@ -45,7 +45,7 @@ export default function Repos () {
                 name:'D&D Companion',
                 url:'https://github.com/ChrispyRice024/DNDCompanion',
                 img: DNDCompanion,
-                description:'(WIP)Utilizing the D&D API, this project helps create and store your Dungeons and Dragons Characters, while also helping you level up easily.'
+                description:'(WIP)Utilizing the D&D API, this project helps create and store your Dungeons and Dragons Characters, while also helping you level up easily and keep track of your weapons, items and spell slot'
             }
         ]
 
