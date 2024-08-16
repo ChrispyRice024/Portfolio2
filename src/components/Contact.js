@@ -85,9 +85,9 @@ export default function Contact() {
         <a
         className='form'
         targert='_blank'
-        href='mailto:chrisdirksen024@outlook.com'
+        href='mailto:dirksen.christopher@gmail.com'
         >
-          chrisdirksen024@outlook.com
+          dirksen.christopher@gmail.com
         </a>
       </p>
       <h3 className="form">GitHub</h3>
