@@ -11,6 +11,12 @@ export default function Home() {
         mongoDB/mongoose and mySQL. I am *mostly* self-taught, starting my education 
         at the Georgia Tech Coding Bootcamp. Since then i have made great strides in my abilities.
       </p>
+      <p>
+        I have spent the last few months dedicating every day to becomming a better programmer/coder.
+        i have been spending most of that time working on the Dungeions&Dragons Companion App. While
+        it is still a work in progress, i think it is an accurate depiction of not only my skills as a 
+        programmer, but also what i have learned in the past few months.
+      </p>
     </div>
   );
 }

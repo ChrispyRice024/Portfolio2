@@ -17,7 +17,7 @@ function App() {
         <Header />
       </header>
       <div className="App" id="repome">
-        <span style={{display: display}}><Home /></span>
+        <div id='home' style={{display: display}}><Home /></div>
         
 
         <SideDisplay />

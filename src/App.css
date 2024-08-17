@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   border-radius: 7px;
   /* font-weight:550; */
-  text-shadow:1px 1px grey;
+  /* text-shadow:1px 1px black; */
 }
 .App {
   text-align: center;
@@ -103,39 +103,39 @@ textarea {
   height: 200px;
 }
 
-    #bio {
-      margin-left: 5px;
-      border: solid 5px;
-      padding: 3px;
-      border-color: #000080;
-    }
+#home{
+  width:45%;
+}
+#bio {
+  margin-left: 5px;
+  border: solid 5px;
+  padding: 4px;
+  border-color: #000080;
+}
 
-    .sideWindow {
-      border: solid 5px;
-      border-color: black;
-      background-color: #000080;
-      color: white;
-      /* max-width:60%; */
-      margin: 10px;
-      text-align:center;
-    }
+.sideWindow {
+  border: solid 5px;
+  border-color: black;
+  background-color: #000080;
+  color: white;
+  margin: 10px;
+  text-align:center;
+}
 
 .sideDisplay {
-  max-width: 60%;
+  max-width: 50%;
   display:block;
   justify-content: center;
   text-align: center;
 }
-
-    img {
-      /* width: 100%; */
-      text-align:center;
-    }
+#sideDisplay > div{
+  max-width:70%;
+}
 
 #work-history {
   border-color: black;
   background-color: #000080;
-  color: white;
+  color: #FFFF7F;
   padding: 10px;
 }
 
@@ -151,14 +151,14 @@ li {
   width:85px;
 }
 
-    #img{
-      max-width:100%;
-      display:block;
-    }
+#img{
+  max-width:100%;
+  display:block;
+}
 
 #disclaimer{
   background-color: #000080;
-  color:red;
+  color:#FFFF7F;
 }
 
 @media (max-width: 800px){
